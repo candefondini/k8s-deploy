@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ejemplo-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce  # El volumen será accesible para lectura y escritura solo desde un nodo a la vez
+  resources:
+    requests:
+      storage: 1Gi  # Solicitará un volumen de 1 GB

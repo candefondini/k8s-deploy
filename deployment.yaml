@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ejemplo-deployment
+spec:
+  replicas: 2  # Número de réplicas del pod
+  selector:
+    matchLabels:
+      app: ejemplo
+  template:
+    metadata:
+      labels:
+        app: ejemplo
+    spec:
+      containers:
+        - name: ejemplo-container
+          image: nginx:latest
