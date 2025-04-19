@@ -50,6 +50,9 @@ kubectl get svc
 minikube service ejemplo-service -p produccion
 
 
+## 🔗 Docker Hub
+[https://hub.docker.com/r/candefondini24/static-website](https://hub.docker.com/r/candefondini24/static-website)
+
 ## Archivos importantes
 
 | `deployment.yaml` | Define el despliegue de Nginx con 2 réplicas. |
@@ -64,4 +67,7 @@ minikube service ejemplo-service -p produccion
    https://github.com/candefondini/mi-static-website
 
 - La solución garantiza persistencia de datos a través del PVC, incluso si los pods se reinician.
+
+
+
 
